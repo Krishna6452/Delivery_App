@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color: #121212;
+  /* Background color */
+  --text-color: #ffffff;
+  /* Text color */
+  --primary-color: #bb86fc;
+  /* Primary accent color */
+  --secondary-color: #03dac6;
+  /* Secondary accent color */
+  --border-color: #333333;
+  /* Border color */
+}
+
+/* styles.css or global.css */
+.light {
+  --bg-color: #ffffff; /* Light theme background */
+  --text-color: #121212; /* Light theme text color */
+  --primary-color: #6200ea; /* Light theme primary color */
+  --secondary-color: #03dac6; /* Light theme secondary color */
+  --border-color: #dddddd; /* Light theme border color */
+}
+
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);  
+}
+
+.button {
+  background-color: var(--primary-color);
+  border: 1px solid var(--border-color);
+}
+
+.button-secondary {
+  background-color: var(--secondary-color);
+}
